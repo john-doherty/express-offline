@@ -1,0 +1,90 @@
+[
+    { "STATUS": "offline" },
+    {
+        "id": "5208d776edb90238cad20ef20d82dd37",
+        "name": "http://data-vocabulary.org/Breadcrumb",
+        "properties": {
+            "url": "Home",
+            "title": "Home"
+        }
+    },
+    {
+        "id": "b4ace52634c5eeac89936524bbfa8e82",
+        "name": "http://data-vocabulary.org/Breadcrumb",
+        "properties": {
+            "url": "Dickies Workwear",
+            "title": "Dickies Workwear"
+        }
+    },
+    {
+        "id": "eedc2d5a5d1a661fb3e54e4a41ea3c69",
+        "name": "http://data-vocabulary.org/Breadcrumb",
+        "properties": {
+            "url": "Dickies Flame Retardant Clothing",
+            "title": "Dickies Flame Retardant Clothing"
+        }
+    },
+    {
+        "id": "14ef1e7a452ceca27c8124b3c26f4b74",
+        "name": "http://schema.org/Product",
+        "properties": {
+            "name": "Dickies Proban Coverall",
+            "manufacturer": "Dickies",
+            "brand": "Dickies",
+            "mpn model": "FR4869",
+            "image": "http://mammothworkwear.com/dickies-proban-coverall-w385h385q94i6368.jpg",
+            "description": "If your workplace really cranks up the heat - literally as well as figuratively - then the Dickies Proban Coverall is for you. Constructed from special flame-retardant fabrics to comply with safety standards EN531 and EN470, this boiler suit offers high quality and reliable performance in hazardous areas. If you can expect a tripartite attack from fire, sparks and molten materials all before lunchtime, you'll need this kind of self-extinguishing clothing. Made to limit burn injuries and protect you against extreme heat, the overalls are ideal for those who work in the welding trade. As well as sporting a proban finish, the garment comes with a concealed stud front and cuffs with stud closure. There's also a studded neck closure, to ensure no sections of clothing come unhoused and dangle over flames and suchlike. Constructed from 330g of 100% cotton drill, this one comes with reinforced stress points and a pair of patch pockets at the chest. There are also further pockets in the seat and at the sides. If you can't stand the heat, don't get out of the workplace - get into the Dickies Proban Flame Retardant Overalls.",
+            "offers": "1 to 445.47"
+        }
+    },
+    {
+        "id": "6624b644bb95d1b03701f389ff8355e0",
+        "name": "http://schema.org/Offer",
+        "properties": {
+            "priceCurrency": "GBP",
+            "price": "45.47",
+            "availability": "InStock",
+            "itemCondition": ""
+        }
+    },
+    {
+        "id": "45b1a45fc81f47bbb681ef169c302098",
+        "name": "http://schema.org/Store",
+        "properties": {
+            "legalName": "The Mammoth Retail Group Ltd",
+            "name": "MammothWorkwear.com",
+            "logo": "http://mammothworkwear.com//files/v42/mammoth-workwear-logo.png",
+            "address": "Storeys Bar RoadPeterboroughCambridgeshirePE1 5TQUnited Kingdom",
+            "geo": "",
+            "paymentAccepted": "cash, credit card, paypal",
+            "hasPOS": "yes",
+            "isicV4": "4791,4771",
+            "currenciesAccepted": "aed,aud,bam,bgn,cad,chf,clp,cny,czk,dkk,dop,eur,gbp,gip,hrk,huf,idr,ils,inr,isk,jmd,jpy,lkr,ltl,mdl,mkd,mxn,myr,nad,nok,nzd,pln,ron,rsd,sar,sek,twd,usd,vef,zar",
+            "url": "http://mammothworkwear.com",
+            "telephone": "+44 0800 432 0224",
+            "faxNumber": "+44 01733 893 548",
+            "email": "sales@mammothworkwear.com",
+            "openingHours": "Sa 09:00-13:00",
+            "vatID": "688 3731 85"
+        }
+    },
+    {
+        "id": "1adbe321e79ec5f638a9005e5120d121",
+        "name": "http://schema.org/PostalAddress",
+        "properties": {
+            "streetAddress": "Storeys Bar Road",
+            "addressLocality": "Peterborough",
+            "addressRegion": "Cambridgeshire",
+            "postalCode": "PE1 5TQ",
+            "addressCountry": "United Kingdom"
+        }
+    },
+    {
+        "id": "f99ba6c69af48115b962a25a8067e28d",
+        "name": "http://schema.org/GeoCoordinates",
+        "properties": {
+            "latitude": "52.57797",
+            "longitude": "-0.206187"
+        }
+    }
+]

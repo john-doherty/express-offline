@@ -1,0 +1,32 @@
+{
+  "name": "express-offline",
+  "version": "1.0.0",
+  "description": "Allows an express app be placed into offline mode and automagically serve responses from disk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-doherty/express-offline.git"
+  },
+  "keywords": [
+    "express",
+    "offline"
+  ],
+  "author": "John Doherty <contact@johndoherty.info> (www.johndoherty.info)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/john-doherty/express-offline/issues"
+  },
+  "homepage": "https://github.com/john-doherty/express-offline#readme",
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "fs-promise": "^1.0.0",
+    "mime": "^1.3.4"
+  },
+  "devDependencies": {
+    "express": "^4.14.1",
+    "node-microdata-scraper": "0.0.4"
+  }
+}
