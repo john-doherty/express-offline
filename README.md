@@ -13,7 +13,7 @@ npm install --save express-offline
 
 In the example below, the `/microdata` route extracts microdata from any website and returns it as a JSON object. So, if we run the example and request `localhost:8080/microdata?url=http://mammothworkwear.com/dickies-proban-coverall-p562.htm` it will return a JSON object containing product information:
 
-```json
+```js
 {
     ...
     {
@@ -46,7 +46,7 @@ var offline = require('express-offline');                // load express-offline
 // add express-offline middleware to intercept requests (must be added before all other routes)
 app.use(offline());
 
-// demo express route to extract microdata from a webpage passed as a querystring
+// demo express route to extract microdata from a webpage passed as a query-string
 app.get('/microdata', function(req, res) {
 
     var url = req.query.url;
@@ -72,7 +72,7 @@ If your accept header is `Accept: application/json` it will look for a `.json` f
  * `app.get('/microdata')` with an accept header of `Accept: application/json` would map to `./offline/get/microdata.json`
  * `app.post('/random')` with an accept header of `Accept: text/html` would map to `./offline/post/random`.
 
- ## Example
+## Example
  
 This project includes a working example. You can run in online mode using:
 
@@ -88,7 +88,6 @@ The following tasks need doing, so please feel free to contribute:
 
     * Add unit tests
     * Clean up documentation
-
 
 ## License
 

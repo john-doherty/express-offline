@@ -1,6 +1,6 @@
 {
   "name": "express-offline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows an express app be placed into offline mode and automagically serve responses from disk.",
   "main": "index.js",
   "scripts": {
