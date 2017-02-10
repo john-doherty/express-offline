@@ -35,7 +35,7 @@ In the example below, the `/microdata` route extracts microdata from any website
 
 We probably dont want to be hitting the [workwear site](http://mammothworkwear.com) for every request during development, so we add the `express-offline` middleware and run our app with the environment variable OFFLINE=true.
 
-Future requests will now return the contents of `./offline/get/microdata.json`
+Future requests will now return the contents of `./offline/development/get/microdata.json`.
 
 ```js
 var express = require('express');
@@ -65,15 +65,27 @@ app.listen(8080);
 
 ## Mapping requests to files
 
-By default `express-offline` will look for an `offline` folder in the root of your application, it will then look for a subfolder matching the request method `get`, `post` etc. Finally it will look for a file matching the `req.path` with a file extension matching the request accept header. 
+By default express-offline will look for an **offline** folder in the root of your application. Path's are them mapped using the following formula:
 
-If your accept header is `Accept: application/json` it will look for a `.json` file. Likewise `Accept: text/html` would look for a `.html` file.
+./offline/ + **NODE_ENV** + / + **HTTP_METHOD**  + /  + **REQUEST_PATH.ACCEPT_HEADER** _(all in lowercase!)_
 
- * `app.get('/microdata')` with an accept header of `Accept: application/json` would map to `./offline/get/microdata.json`
- * `app.post('/random')` with an accept header of `Accept: text/html` would map to `./offline/post/random`.
+So the following GET request to your application running in development mode would return **./offline/development/get/microdata.json**
+
+```
+GET /microdata?url=http://mammothworkwear.com/dickies-proban-coverall-p562.htm HTTP/1.0
+Accept: application/json
+```
+
+The following POST request to your application running in production mode would return **./offline/production/post/microdata.html**
+
+```
+POST /microdata HTTP/1.0
+Accept: text/html
+```
+
 
 ## Example
- 
+
 This project includes a working example. You can run in online mode using:
 
 `node ./node-modules/express-offline/example.js`
@@ -86,8 +98,8 @@ And in offline mode using:
 
 The following tasks need doing, so please feel free to contribute:
 
-    * Add unit tests
-    * Clean up documentation
+* Add unit tests
+* Clean up documentation
 
 ## License
 
